@@ -92,7 +92,6 @@ namespace IsimonWorld
             this.Add(new IsiProfil("Salameche", "Salameche.png", IsiType.Feu,42,14,10,8));
             this.Add(new IsiProfil("Carapuce", "Carapuce.png", IsiType.Eau,41,11,13,9));
             this.Add(new IsiProfil("Bulbizarre", "Bulbizarre.png", IsiType.Plante,47,7,14,6));         
-
         }
 
 

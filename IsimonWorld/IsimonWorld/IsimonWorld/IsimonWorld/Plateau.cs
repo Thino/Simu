@@ -20,7 +20,6 @@ namespace IsimonWorld
 
         private Grid _gPlateau;
 
-
         public Plateau(int[] parametres, Grid _inGPlateau)
         {
             _matrice = new Case[parametres[1], parametres[0]];
@@ -39,7 +38,6 @@ namespace IsimonWorld
         {
             return _acteurs;
         }
-
 
         private void InitActeurs(int[] parametres)
         {                

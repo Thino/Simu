@@ -161,6 +161,7 @@ namespace IsimonWorld
 
         public void GererReproduction()
         {
+
             SeReproduire((Isimon)this.Interact);
         }
 
@@ -182,10 +183,8 @@ namespace IsimonWorld
                 OnlyOneIsimonAround(isimons.First());
             else if (dresseurs.Count == 0 && isimons.Count > 1)
                 MoreThanOneIsimonAround(isimons);
-            //else if (dresseurs.Count == 1 && isimons.Count == 0)
             else
-                SeDeplacer(); // Juste pour tester et éviter que les pkemons restent statiques pour le moment
-
+                SeDeplacer(); 
         }
 
         private void incPV(int nbPV)
@@ -209,26 +208,30 @@ namespace IsimonWorld
                         IntegrerGroupe();
                         return;
                     }
-                    if (i.Statut == IsiStatut.DISPO && LancerCreationGroupe(i))
+                    /*if (i.Statut == IsiStatut.DISPO && LancerCreationGroupe(i))
                     {
                         CreerGroupe();
                         return;
-                    }
-                    if (i._sexe != this._sexe && LancerReproduction(i))
+                    }*/
+                    if(Math.Abs(i.Niveau - this.Niveau) <= 10)
                     {
-                        GererReproduction();
-                        return;
+                        if (i._sexe != this._sexe && LancerReproduction(i))
+                        {
+                            GererReproduction();
+                            return;
+                        }
+                        if (i._sexe == this._sexe && LancerCombat(i))
+                        {
+                            GererCombatIsimon();
+                            return;
+                        }
                     }
-                    if (i._sexe == this._sexe && LancerCombat(i))
-                    {
-                        GererCombatIsimon();
-                        return;
-                    }
-                    SeDeplacer();
+                    else
+                        SeDeplacer();
                 }
                 else
                 {
-                    if (LancerCombat(i))
+                    if (Math.Abs(i.Niveau - this.Niveau) <= 10 && LancerCombat(i))
                         GererCombatIsimon();
                     else
                         SeDeplacer();
@@ -240,23 +243,30 @@ namespace IsimonWorld
 
         public void MoreThanOneIsimonAround(List<Isimon> listIsi)
         {
-            OnlyOneIsimonAround(getBestIsimon(listIsi));
+            Isimon i = getBestIsimon(listIsi);
+            if (i != null)
+                OnlyOneIsimonAround(i);
+            else
+                SeDeplacer();
         }
 
-        public Isimon getBestIsimon(List<Isimon> listIsi) //En modification (pas fini)
+        public Isimon getBestIsimon(List<Isimon> listIsi) 
         {
-            int level = 101;
-            Isimon isiSaved = listIsi.First();
+            int minLevel = 101;
+            Isimon isiSaved = null;
+            int level;
 
-           /* foreach (Isimon i in listIsi)
+            foreach (Isimon i in listIsi)
             {
-                if (i.Vit > maxVit)
+                level = Math.Abs(i.Niveau - this.Niveau);
+
+                if (level < minLevel && level <= 10)
                 {
-                    maxVit = i.Vit;
+                    minLevel = Math.Abs(i.Niveau - this.Niveau);
                     isiSaved = i;
                 }
-            }*/
-
+            }
+            
             return isiSaved;
         }
 
