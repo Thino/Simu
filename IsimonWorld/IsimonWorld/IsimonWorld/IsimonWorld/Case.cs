@@ -8,11 +8,11 @@ namespace IsimonWorld
     public class Case
     {
 
-        //Test ou pas
+     
 
         private int _row;
 
-        //il va être bien ce test
+        
 
         public int Row
         {

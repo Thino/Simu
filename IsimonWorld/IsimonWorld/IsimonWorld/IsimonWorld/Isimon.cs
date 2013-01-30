@@ -14,11 +14,11 @@ namespace IsimonWorld
     {
 
         private char _sexe;
-        private int _niveau;     
-        private IsiType _type;    
+        private int _niveau;
+        private IsiType _type;
         private int _pvMax;
         private long _experience;
-        private int _pv;      
+        private int _pv;
         private int _atk;
         private int _def;
         private int _vit;
@@ -43,14 +43,14 @@ namespace IsimonWorld
             get { return _atk; }
             set { _atk = value; }
         }
-  
+
 
         public int Def
         {
             get { return _def; }
             set { _def = value; }
         }
-     
+
 
         public int Vit
         {
@@ -95,7 +95,7 @@ namespace IsimonWorld
         }
 
         public Isimon(IsiProfil i, Plateau plateau)
-            : base(i.Nom, i.Img,plateau)
+            : base(i.Nom, i.Img, plateau)
         {
             _experience = 0;
             _statut = IsiStatut.DISPO;
@@ -137,7 +137,7 @@ namespace IsimonWorld
                 case (IsiStatut.KO):
                     GererKO();
                     break;
-            }    
+            }
         }
 
 
@@ -152,7 +152,7 @@ namespace IsimonWorld
 
         public void GererGestation()
         {
-        }  
+        }
 
         public void GererGroupe()
         {
@@ -167,14 +167,14 @@ namespace IsimonWorld
         public void GererKO()
         {
             incPV(2);
-            if (Pv >= PvMax/2)
+            if (Pv >= PvMax / 2)
                 this.Statut = IsiStatut.DISPO;
         }
 
         public void GererDispo()
         {
             List<Dresseur> dresseurs = _plateau.GetDresseursAround(this);
-            List<Isimon> isimons = _plateau.GetIsimonsAround(this);            
+            List<Isimon> isimons = _plateau.GetIsimonsAround(this);
             incPV(2); // Récupération progressive
             if (dresseurs.Count == 0 && isimons.Count == 0)
                 SeDeplacer();
@@ -182,9 +182,10 @@ namespace IsimonWorld
                 OnlyOneIsimonAround(isimons.First());
             else if (dresseurs.Count == 0 && isimons.Count > 1)
                 MoreThanOneIsimonAround(isimons);
-            else if (dresseurs.Count == 1 && isimons.Count == 0)
-            SeDeplacer(); // Juste pour tester et éviter que les pkemons restent statiques pour le moment
-        
+            //else if (dresseurs.Count == 1 && isimons.Count == 0)
+            else
+                SeDeplacer(); // Juste pour tester et éviter que les pkemons restent statiques pour le moment
+
         }
 
         private void incPV(int nbPV)
@@ -199,7 +200,7 @@ namespace IsimonWorld
 
         public void OnlyOneIsimonAround(Isimon i)
         {
-            if(i.Statut == IsiStatut.DISPO || i.Statut == IsiStatut.GROUPE)
+            if (i.Statut == IsiStatut.DISPO || i.Statut == IsiStatut.GROUPE)
             {
                 if (i.Nom == this.Nom)
                 {
@@ -227,34 +228,34 @@ namespace IsimonWorld
                 }
                 else
                 {
-                    if(LancerCombat(i))
+                    if (LancerCombat(i))
                         GererCombatIsimon();
                     else
                         SeDeplacer();
                 }
-            } 
+            }
             else
                 SeDeplacer();
         }
 
-        public void  MoreThanOneIsimonAround(List<Isimon> listIsi)
+        public void MoreThanOneIsimonAround(List<Isimon> listIsi)
         {
-            OnlyOneIsimonAround(getFastestIsimon(listIsi));
+            OnlyOneIsimonAround(getBestIsimon(listIsi));
         }
 
-        public Isimon getFastestIsimon(List<Isimon> listIsi)
+        public Isimon getBestIsimon(List<Isimon> listIsi) //En modification (pas fini)
         {
-            int maxVit = listIsi.First().Vit;
+            int level = 101;
             Isimon isiSaved = listIsi.First();
 
-            foreach(Isimon i in listIsi)
+           /* foreach (Isimon i in listIsi)
             {
                 if (i.Vit > maxVit)
                 {
                     maxVit = i.Vit;
                     isiSaved = i;
                 }
-            }
+            }*/
 
             return isiSaved;
         }
@@ -271,7 +272,7 @@ namespace IsimonWorld
             i.Statut = IsiStatut.COMBAT_ISIMON;
             this.Statut = IsiStatut.COMBAT_ISIMON;
             this.Interact = i;
-            i.Interact = this;             
+            i.Interact = this;
             return true;
         }
 
@@ -301,13 +302,13 @@ namespace IsimonWorld
             //Gestion de l'EXP et des niveaux
             float val = 0;
             float ratio = ConstantesCombats.Instance.GetRatio(Type, adversaire.Type);
-            if ( ratio < 1  )
-                ratio+=1;
+            if (ratio < 1)
+                ratio += 1;
             else
-                ratio-=1;
+                ratio -= 1;
             if (Niveau < adversaire.Niveau)
             {
-                val = (adversaire.Niveau - Niveau)*50;
+                val = (adversaire.Niveau - Niveau) * 50;
                 val *= ratio;
             }
             if (Niveau > adversaire.Niveau)
@@ -320,14 +321,14 @@ namespace IsimonWorld
                 val = 20 * ratio;
             }
             Experience += (int)val;
-            if ( Experience > (Niveau+1)*Niveau*10)
+            if (Experience > (Niveau + 1) * Niveau * 10)
                 Niveau++;
         }
 
-        private void SeReproduire(Isimon i);
+        private void SeReproduire(Isimon i) { }
 
-        private void CreerGroupe();
+        private void CreerGroupe() { }
 
-        private void IntegrerGroupe();
+        private void IntegrerGroupe() { }
     }
 }
