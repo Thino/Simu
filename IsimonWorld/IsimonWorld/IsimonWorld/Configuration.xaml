@@ -1,0 +1,38 @@
+﻿<Window x:Class="IsimonWorld.Configuration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuration" SizeToContent="WidthAndHeight"  Background="YellowGreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Configuration de la simulation" Grid.ColumnSpan="3" HorizontalAlignment="Center" Foreground="DarkBlue" FontSize="25" />
+        <Label Content="Cases horizontales :" Grid.Row="1" HorizontalAlignment="Right" Foreground="DarkBlue" FontSize="15" />
+        <Label Content="Cases verticales :" Grid.Row="2" HorizontalAlignment="Right" Foreground="DarkBlue" FontSize="15" />
+        <Label Content="Arbres :" Grid.Row="3"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right"/>
+        <Label Content="Isimons :" Grid.Row="4"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right"/>
+        <Label Content="Dresseurs :" Grid.Row="5"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right" />
+        <TextBox Text="10" Name="tbCasesH" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="1" Width="50" MouseEnter="tbCasesH_MouseEnter" MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="10" Name="tbCasesV" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="2" Width="50" MouseEnter="tbCasesV_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="10" Name="tbArbres" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="3" Width="50" MouseEnter="tbArbres_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="8" Name="tbIsimons" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="4" Width="50" MouseEnter="tbIsimons_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="2" Name="tbDresseurs" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="5" Width="50" MouseEnter="tbDresseurs_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <Label Content="%" Grid.Column="2" Grid.Row="3"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />
+        <Label Content="%" Grid.Column="2" Grid.Row="4"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />
+        <Label Content="%" Grid.Column="2" Grid.Row="5"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />
+        <TextBlock Name="tblInfos" Grid.Row="7" Grid.ColumnSpan="3" FontSize="12" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="0,3,0,3" />
+        <Button Content="Valider" FontSize="15" Grid.Row="6" Grid.ColumnSpan="3" Width="65" Margin="0,6,0,0" Click="Button_Click" />
+    </Grid>
+</Window>

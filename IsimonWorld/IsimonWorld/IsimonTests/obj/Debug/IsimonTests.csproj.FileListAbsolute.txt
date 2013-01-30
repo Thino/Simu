@@ -1,0 +1,14 @@
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonTests.dll
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonTests.pdb
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonWorld.exe
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonWorld.pdb
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\IsimonTests.dll
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\IsimonTests.pdb
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonTests.dll
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonTests.pdb
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonWorld.exe
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\bin\Debug\IsimonWorld.pdb
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\IsimonTests.dll
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonTests\obj\Debug\IsimonTests.pdb

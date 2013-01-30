@@ -1,0 +1,78 @@
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\App.g.cs
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.cache
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.g.resources
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.Properties.Resources.resources
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.exe
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.pdb
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.baml
+C:\Users\Admin\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.g.cs
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.exe
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.pdb
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.baml
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.baml
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.g.cs
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\App.g.cs
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.cache
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.g.resources
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.Properties.Resources.resources
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.lref
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.baml
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.baml
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.baml
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.cache
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.lref
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.exe
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.pdb
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.g.resources
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.Properties.Resources.resources
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.baml
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.baml
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Configuration.g.cs
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\Views\IsimonDetailsView.g.cs
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.g.cs
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\App.g.cs
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.cache
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld_MarkupCompile.lref
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.exe
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.pdb
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\MainWindow.baml
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.g.resources
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.Properties.Resources.resources
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="18fa99b6-e613-4d66-9e1a-3e0937ece3bb" name="vallazza@DEVWIN 2013-01-29 10:55:16" runUser="RCISIMA\vallazza" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="05a28fdd-5e41-4abc-824f-e8b5e3c78506">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="vallazza_DEVWIN 2013-01-29 10_55_16">
+      <DeploymentItem filename="C:\Documents and Settings\vallazza\Bureau\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\bin\Debug\IsimonWorld.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-29T10:55:16.5715763+01:00" queuing="2013-01-29T10:55:17.7121502+01:00" start="2013-01-29T10:55:17.8683932+01:00" finish="2013-01-29T10:55:36.3206915+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="21" executed="21" passed="21" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WrongRangInf0" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="8f392fda-e376-97aa-a9c6-3810dcd78aac">
+      <Execution id="ec78a764-28b8-4b1d-9269-cc4124e7850a" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangInf0" />
+    </UnitTest>
+    <UnitTest name="WrongRangSup0" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="eb362263-ecc4-745b-5f3a-f78895dd6286">
+      <Execution id="44d3c3fc-f64a-4b1f-a4a0-c3f3ac353abe" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangSup0" />
+    </UnitTest>
+    <UnitTest name="WrongRangSup4" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="c3da8bd5-7e33-fdf0-3b1c-6bd466a9d01c">
+      <Execution id="11d76f29-72bf-4874-8faf-9da8896cc900" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangSup4" />
+    </UnitTest>
+    <UnitTest name="ParamNull3" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="9fa6a685-87fe-d088-32d3-3cad14c5fd77">
+      <Execution id="c38d0d8d-d91a-44d2-be5f-bb014d3d8b66" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParamNull3" />
+    </UnitTest>
+    <UnitTest name="WrongParam2" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="416861da-47a4-3c15-1142-1fb026b137ce">
+      <Execution id="076a7dc8-dc63-4c9c-8eab-df332fcd1f66" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongParam2" />
+    </UnitTest>
+    <UnitTest name="ParamNull2" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="246cc0f2-967e-2fc6-c6eb-9cc36d02d8f1">
+      <Execution id="82d244ba-ca0e-4f8f-95cb-f5bcacc2decc" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParamNull2" />
+    </UnitTest>
+    <UnitTest name="WrongRangSup1" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="da0dac67-54ea-5582-2dc1-52b9b27b6caf">
+      <Execution id="ea6d7b8d-96e3-4792-b8a9-357c5cf353a8" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangSup1" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="8a51fc18-dd98-cd99-d1b5-9deea49fad8f">
+      <Execution id="5e9ca8bb-bba7-4026-a82c-e194759e670e" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.UnitTest1, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="ParamNull4" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="dc3753c0-c47c-ed65-13ad-6466e193b9ff">
+      <Execution id="9e20f634-239c-481e-b9ba-1bd070f604f6" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParamNull4" />
+    </UnitTest>
+    <UnitTest name="WrongParam3" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="eeab8626-6f4f-82f4-8226-c0222dfdf1f0">
+      <Execution id="949f5312-1390-496d-94d3-e1dcdf31e10a" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongParam3" />
+    </UnitTest>
+    <UnitTest name="WrongParam4" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="f96e5aeb-a9e4-2d37-e86e-a87ff18b2b8b">
+      <Execution id="f409fa86-2064-47e1-82e3-3d85a82784d0" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongParam4" />
+    </UnitTest>
+    <UnitTest name="WrongRangSup3" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="32daa748-e7bc-9a02-ef23-8502e251d401">
+      <Execution id="fde434eb-b8fd-4041-9f84-dcda65103db9" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangSup3" />
+    </UnitTest>
+    <UnitTest name="WrongRangInf3" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="2a82a3e6-9f18-c9c1-8840-04e52ec9885a">
+      <Execution id="524d4776-22f8-4fa5-ae34-81c2e6b7e00e" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangInf3" />
+    </UnitTest>
+    <UnitTest name="WrongRangInf2" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="261c9afe-84df-3b2c-df59-f6550236144d">
+      <Execution id="3e2a8b19-b95f-4ef4-b80e-726d9a649af4" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangInf2" />
+    </UnitTest>
+    <UnitTest name="WrongRangSup2" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="54881401-4b36-db55-b125-4509a9df05a0">
+      <Execution id="e9db3c50-de7b-40dc-bfe4-d2f28879f89b" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangSup2" />
+    </UnitTest>
+    <UnitTest name="WrongParam0" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="62ec2b9e-168c-0580-2f43-016221aba488">
+      <Execution id="d4499f1b-3b7e-4a4c-904c-428c49d34905" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongParam0" />
+    </UnitTest>
+    <UnitTest name="ParamNull0" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="b0efebd3-a733-2abd-d4fc-6f4c627e50d6">
+      <Execution id="e1752ca4-276b-47cd-8485-582047fb752c" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParamNull0" />
+    </UnitTest>
+    <UnitTest name="WrongRangInf1" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="2de02b48-61bb-3061-3651-de0e1b93c9e1">
+      <Execution id="585508af-3512-4464-97bc-25c512842ddc" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangInf1" />
+    </UnitTest>
+    <UnitTest name="WrongRangInf4" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="dab3d14a-f780-fc68-2df1-aaf6b564b11b">
+      <Execution id="22afc3a0-b49c-4d70-a202-7aa9b728e5f3" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongRangInf4" />
+    </UnitTest>
+    <UnitTest name="WrongParam1" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="f35ed14a-13ed-435d-701a-20defbf2859c">
+      <Execution id="59c774c2-0283-43b9-a856-392f40549c80" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WrongParam1" />
+    </UnitTest>
+    <UnitTest name="ParamNull1" storage="c:\documents and settings\vallazza\bureau\isimonworld\isimonworld\isimonworld\isimontests\bin\debug\isimontests.dll" id="3349a003-8af4-24ea-48c6-01c84bd1a46c">
+      <Execution id="33cdc1a5-c45d-4350-9c04-f4f5157799f3" />
+      <TestMethod codeBase="C:/Documents and Settings/vallazza/Bureau/IsimonWorld/IsimonWorld/IsimonWorld/IsimonTests/bin/Debug/IsimonTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="IsimonTests.ConfigurationTests, IsimonTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParamNull1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="246cc0f2-967e-2fc6-c6eb-9cc36d02d8f1" executionId="82d244ba-ca0e-4f8f-95cb-f5bcacc2decc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="261c9afe-84df-3b2c-df59-f6550236144d" executionId="3e2a8b19-b95f-4ef4-b80e-726d9a649af4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a82a3e6-9f18-c9c1-8840-04e52ec9885a" executionId="524d4776-22f8-4fa5-ae34-81c2e6b7e00e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2de02b48-61bb-3061-3651-de0e1b93c9e1" executionId="585508af-3512-4464-97bc-25c512842ddc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32daa748-e7bc-9a02-ef23-8502e251d401" executionId="fde434eb-b8fd-4041-9f84-dcda65103db9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3349a003-8af4-24ea-48c6-01c84bd1a46c" executionId="33cdc1a5-c45d-4350-9c04-f4f5157799f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="416861da-47a4-3c15-1142-1fb026b137ce" executionId="076a7dc8-dc63-4c9c-8eab-df332fcd1f66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54881401-4b36-db55-b125-4509a9df05a0" executionId="e9db3c50-de7b-40dc-bfe4-d2f28879f89b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62ec2b9e-168c-0580-2f43-016221aba488" executionId="d4499f1b-3b7e-4a4c-904c-428c49d34905" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a51fc18-dd98-cd99-d1b5-9deea49fad8f" executionId="5e9ca8bb-bba7-4026-a82c-e194759e670e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f392fda-e376-97aa-a9c6-3810dcd78aac" executionId="ec78a764-28b8-4b1d-9269-cc4124e7850a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fa6a685-87fe-d088-32d3-3cad14c5fd77" executionId="c38d0d8d-d91a-44d2-be5f-bb014d3d8b66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0efebd3-a733-2abd-d4fc-6f4c627e50d6" executionId="e1752ca4-276b-47cd-8485-582047fb752c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3da8bd5-7e33-fdf0-3b1c-6bd466a9d01c" executionId="11d76f29-72bf-4874-8faf-9da8896cc900" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da0dac67-54ea-5582-2dc1-52b9b27b6caf" executionId="ea6d7b8d-96e3-4792-b8a9-357c5cf353a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dab3d14a-f780-fc68-2df1-aaf6b564b11b" executionId="22afc3a0-b49c-4d70-a202-7aa9b728e5f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc3753c0-c47c-ed65-13ad-6466e193b9ff" executionId="9e20f634-239c-481e-b9ba-1bd070f604f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb362263-ecc4-745b-5f3a-f78895dd6286" executionId="44d3c3fc-f64a-4b1f-a4a0-c3f3ac353abe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eeab8626-6f4f-82f4-8226-c0222dfdf1f0" executionId="949f5312-1390-496d-94d3-e1dcdf31e10a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f35ed14a-13ed-435d-701a-20defbf2859c" executionId="59c774c2-0283-43b9-a856-392f40549c80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f96e5aeb-a9e4-2d37-e86e-a87ff18b2b8b" executionId="f409fa86-2064-47e1-82e3-3d85a82784d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="82d244ba-ca0e-4f8f-95cb-f5bcacc2decc" testId="246cc0f2-967e-2fc6-c6eb-9cc36d02d8f1" testName="ParamNull2" computerName="DEVWIN" duration="00:00:10.8166645" startTime="2013-01-29T10:55:17.8840175+01:00" endTime="2013-01-29T10:55:29.2585079+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82d244ba-ca0e-4f8f-95cb-f5bcacc2decc">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e2a8b19-b95f-4ef4-b80e-726d9a649af4" testId="261c9afe-84df-3b2c-df59-f6550236144d" testName="WrongRangInf2" computerName="DEVWIN" duration="00:00:00.4696956" startTime="2013-01-29T10:55:29.2741322+01:00" endTime="2013-01-29T10:55:29.7428612+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e2a8b19-b95f-4ef4-b80e-726d9a649af4">
+    </UnitTestResult>
+    <UnitTestResult executionId="524d4776-22f8-4fa5-ae34-81c2e6b7e00e" testId="2a82a3e6-9f18-c9c1-8840-04e52ec9885a" testName="WrongRangInf3" computerName="DEVWIN" duration="00:00:02.5783934" startTime="2013-01-29T10:55:29.7428612+01:00" endTime="2013-01-29T10:55:32.3208707+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="524d4776-22f8-4fa5-ae34-81c2e6b7e00e">
+    </UnitTestResult>
+    <UnitTestResult executionId="585508af-3512-4464-97bc-25c512842ddc" testId="2de02b48-61bb-3061-3651-de0e1b93c9e1" testName="WrongRangInf1" computerName="DEVWIN" duration="00:00:00.3590177" startTime="2013-01-29T10:55:32.3364950+01:00" endTime="2013-01-29T10:55:32.6958539+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="585508af-3512-4464-97bc-25c512842ddc">
+    </UnitTestResult>
+    <UnitTestResult executionId="fde434eb-b8fd-4041-9f84-dcda65103db9" testId="32daa748-e7bc-9a02-ef23-8502e251d401" testName="WrongRangSup3" computerName="DEVWIN" duration="00:00:00.3588952" startTime="2013-01-29T10:55:32.6958539+01:00" endTime="2013-01-29T10:55:33.0552128+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fde434eb-b8fd-4041-9f84-dcda65103db9">
+    </UnitTestResult>
+    <UnitTestResult executionId="33cdc1a5-c45d-4350-9c04-f4f5157799f3" testId="3349a003-8af4-24ea-48c6-01c84bd1a46c" testName="ParamNull1" computerName="DEVWIN" duration="00:00:00.5226700" startTime="2013-01-29T10:55:33.0708371+01:00" endTime="2013-01-29T10:55:33.5864390+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33cdc1a5-c45d-4350-9c04-f4f5157799f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="076a7dc8-dc63-4c9c-8eab-df332fcd1f66" testId="416861da-47a4-3c15-1142-1fb026b137ce" testName="WrongParam2" computerName="DEVWIN" duration="00:00:00.2537693" startTime="2013-01-29T10:55:33.6020633+01:00" endTime="2013-01-29T10:55:33.8520521+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="076a7dc8-dc63-4c9c-8eab-df332fcd1f66">
+    </UnitTestResult>
+    <UnitTestResult executionId="e9db3c50-de7b-40dc-bfe4-d2f28879f89b" testId="54881401-4b36-db55-b125-4509a9df05a0" testName="WrongRangSup2" computerName="DEVWIN" duration="00:00:00.1853917" startTime="2013-01-29T10:55:33.8520521+01:00" endTime="2013-01-29T10:55:34.0395437+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9db3c50-de7b-40dc-bfe4-d2f28879f89b">
+    </UnitTestResult>
+    <UnitTestResult executionId="d4499f1b-3b7e-4a4c-904c-428c49d34905" testId="62ec2b9e-168c-0580-2f43-016221aba488" testName="WrongParam0" computerName="DEVWIN" duration="00:00:00.1473732" startTime="2013-01-29T10:55:34.0551680+01:00" endTime="2013-01-29T10:55:34.1957867+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4499f1b-3b7e-4a4c-904c-428c49d34905">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e9ca8bb-bba7-4026-a82c-e194759e670e" testId="8a51fc18-dd98-cd99-d1b5-9deea49fad8f" testName="TestMethod1" computerName="DEVWIN" duration="00:00:00.0003371" startTime="2013-01-29T10:55:34.2114110+01:00" endTime="2013-01-29T10:55:34.2114110+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e9ca8bb-bba7-4026-a82c-e194759e670e">
+    </UnitTestResult>
+    <UnitTestResult executionId="ec78a764-28b8-4b1d-9269-cc4124e7850a" testId="8f392fda-e376-97aa-a9c6-3810dcd78aac" testName="WrongRangInf0" computerName="DEVWIN" duration="00:00:00.3617610" startTime="2013-01-29T10:55:34.2114110+01:00" endTime="2013-01-29T10:55:34.5707699+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec78a764-28b8-4b1d-9269-cc4124e7850a">
+    </UnitTestResult>
+    <UnitTestResult executionId="c38d0d8d-d91a-44d2-be5f-bb014d3d8b66" testId="9fa6a685-87fe-d088-32d3-3cad14c5fd77" testName="ParamNull3" computerName="DEVWIN" duration="00:00:00.1846443" startTime="2013-01-29T10:55:34.5863942+01:00" endTime="2013-01-29T10:55:34.7738858+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c38d0d8d-d91a-44d2-be5f-bb014d3d8b66">
+    </UnitTestResult>
+    <UnitTestResult executionId="e1752ca4-276b-47cd-8485-582047fb752c" testId="b0efebd3-a733-2abd-d4fc-6f4c627e50d6" testName="ParamNull0" computerName="DEVWIN" duration="00:00:00.1669314" startTime="2013-01-29T10:55:34.7738858+01:00" endTime="2013-01-29T10:55:34.9457531+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1752ca4-276b-47cd-8485-582047fb752c">
+    </UnitTestResult>
+    <UnitTestResult executionId="11d76f29-72bf-4874-8faf-9da8896cc900" testId="c3da8bd5-7e33-fdf0-3b1c-6bd466a9d01c" testName="WrongRangSup4" computerName="DEVWIN" duration="00:00:00.1471670" startTime="2013-01-29T10:55:34.9457531+01:00" endTime="2013-01-29T10:55:35.1019961+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11d76f29-72bf-4874-8faf-9da8896cc900">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea6d7b8d-96e3-4792-b8a9-357c5cf353a8" testId="da0dac67-54ea-5582-2dc1-52b9b27b6caf" testName="WrongRangSup1" computerName="DEVWIN" duration="00:00:00.1473886" startTime="2013-01-29T10:55:35.1019961+01:00" endTime="2013-01-29T10:55:35.2582391+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea6d7b8d-96e3-4792-b8a9-357c5cf353a8">
+    </UnitTestResult>
+    <UnitTestResult executionId="22afc3a0-b49c-4d70-a202-7aa9b728e5f3" testId="dab3d14a-f780-fc68-2df1-aaf6b564b11b" testName="WrongRangInf4" computerName="DEVWIN" duration="00:00:00.1443928" startTime="2013-01-29T10:55:35.2582391+01:00" endTime="2013-01-29T10:55:35.4144821+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22afc3a0-b49c-4d70-a202-7aa9b728e5f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="9e20f634-239c-481e-b9ba-1bd070f604f6" testId="dc3753c0-c47c-ed65-13ad-6466e193b9ff" testName="ParamNull4" computerName="DEVWIN" duration="00:00:00.0980906" startTime="2013-01-29T10:55:35.4144821+01:00" endTime="2013-01-29T10:55:35.5238522+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e20f634-239c-481e-b9ba-1bd070f604f6">
+    </UnitTestResult>
+    <UnitTestResult executionId="44d3c3fc-f64a-4b1f-a4a0-c3f3ac353abe" testId="eb362263-ecc4-745b-5f3a-f78895dd6286" testName="WrongRangSup0" computerName="DEVWIN" duration="00:00:00.1370664" startTime="2013-01-29T10:55:35.5238522+01:00" endTime="2013-01-29T10:55:35.6644709+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44d3c3fc-f64a-4b1f-a4a0-c3f3ac353abe">
+    </UnitTestResult>
+    <UnitTestResult executionId="949f5312-1390-496d-94d3-e1dcdf31e10a" testId="eeab8626-6f4f-82f4-8226-c0222dfdf1f0" testName="WrongParam3" computerName="DEVWIN" duration="00:00:00.2054955" startTime="2013-01-29T10:55:35.6644709+01:00" endTime="2013-01-29T10:55:35.8832111+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="949f5312-1390-496d-94d3-e1dcdf31e10a">
+    </UnitTestResult>
+    <UnitTestResult executionId="59c774c2-0283-43b9-a856-392f40549c80" testId="f35ed14a-13ed-435d-701a-20defbf2859c" testName="WrongParam1" computerName="DEVWIN" duration="00:00:00.1660183" startTime="2013-01-29T10:55:35.8832111+01:00" endTime="2013-01-29T10:55:36.0550784+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59c774c2-0283-43b9-a856-392f40549c80">
+    </UnitTestResult>
+    <UnitTestResult executionId="f409fa86-2064-47e1-82e3-3d85a82784d0" testId="f96e5aeb-a9e4-2d37-e86e-a87ff18b2b8b" testName="WrongParam4" computerName="DEVWIN" duration="00:00:00.2247083" startTime="2013-01-29T10:55:36.0550784+01:00" endTime="2013-01-29T10:55:36.2894429+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f409fa86-2064-47e1-82e3-3d85a82784d0">
+    </UnitTestResult>
+  </Results>
+</TestRun>
