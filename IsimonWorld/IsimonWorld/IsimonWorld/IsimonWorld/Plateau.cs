@@ -8,8 +8,6 @@ namespace IsimonWorld
 {
     public class Plateau
     {
-        
-
         private int _nbRow;
 
         private int _nbColumn;
@@ -19,6 +17,24 @@ namespace IsimonWorld
         private List<Entite> _acteurs;
 
         private Grid _gPlateau;
+
+        public int NbRow
+        {
+            get { return _nbRow; }
+            set { _nbRow = value; }
+        }
+
+        public int NbColumn
+        {
+            get { return _nbColumn; }
+            set { _nbColumn = value; }
+        }
+
+        public Case[,] Matrice
+        {
+            get { return _matrice; }
+            set { _matrice = value; }
+        }
 
         public Plateau(int[] parametres, Grid _inGPlateau)
         {
@@ -86,11 +102,7 @@ namespace IsimonWorld
                 AddActeur(a);
                 DeplacerActeur(a, _matrice[row, col]);
             }
-            
         }
-
-     
-
 
         public void AddActeur(Entite inI)
         {
@@ -165,8 +177,6 @@ namespace IsimonWorld
                     ret.Add((Dresseur)c.Acteur);
             }
             return ret;
-        }
-
-       
+        }  
     }
 }

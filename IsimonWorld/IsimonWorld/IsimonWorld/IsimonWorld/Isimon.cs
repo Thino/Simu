@@ -152,6 +152,10 @@ namespace IsimonWorld
 
         public void GererGestation()
         {
+            //à améliorer
+            int jour = PseudoAlea.GetInt(0, 20);
+            if (jour == 20)
+                NaissanceIsimon();
         }
 
         public void GererGroupe()
@@ -161,7 +165,6 @@ namespace IsimonWorld
 
         public void GererReproduction()
         {
-
             SeReproduire((Isimon)this.Interact);
         }
 
@@ -177,6 +180,8 @@ namespace IsimonWorld
             List<Dresseur> dresseurs = _plateau.GetDresseursAround(this);
             List<Isimon> isimons = _plateau.GetIsimonsAround(this);
             incPV(2); // Récupération progressive
+
+            //Faire cas des dresseurs
             if (dresseurs.Count == 0 && isimons.Count == 0)
                 SeDeplacer();
             else if (dresseurs.Count == 0 && isimons.Count == 1)
@@ -184,7 +189,7 @@ namespace IsimonWorld
             else if (dresseurs.Count == 0 && isimons.Count > 1)
                 MoreThanOneIsimonAround(isimons);
             else
-                SeDeplacer(); 
+                SeDeplacer();
         }
 
         private void incPV(int nbPV)
@@ -213,7 +218,7 @@ namespace IsimonWorld
                         CreerGroupe();
                         return;
                     }*/
-                    if(Math.Abs(i.Niveau - this.Niveau) <= 10)
+                    if (Math.Abs(i.Niveau - this.Niveau) <= 10)
                     {
                         if (i._sexe != this._sexe && LancerReproduction(i))
                         {
@@ -250,7 +255,7 @@ namespace IsimonWorld
                 SeDeplacer();
         }
 
-        public Isimon getBestIsimon(List<Isimon> listIsi) 
+        public Isimon getBestIsimon(List<Isimon> listIsi)
         {
             int minLevel = 101;
             Isimon isiSaved = null;
@@ -266,12 +271,19 @@ namespace IsimonWorld
                     isiSaved = i;
                 }
             }
-            
+
             return isiSaved;
         }
 
         private bool LancerReproduction(Isimon i)
-        { return true; }
+        {
+            //retourne toujours vrai, ne pas oublier de faire la proba
+            this.Statut = IsiStatut.REPRODUCTION;
+            i.Statut = IsiStatut.REPRODUCTION;
+            this.Interact = i;
+            i.Interact = this;
+            return true;
+        }
 
         private bool LancerIntegrationGroupe(EntiteActive g) { return true; }
 
@@ -279,6 +291,7 @@ namespace IsimonWorld
 
         private bool LancerCombat(Isimon i)
         {
+            //retourne toujours vrai, ne pas oublier de faire la proba
             i.Statut = IsiStatut.COMBAT_ISIMON;
             this.Statut = IsiStatut.COMBAT_ISIMON;
             this.Interact = i;
@@ -333,9 +346,9 @@ namespace IsimonWorld
                 Niveau++;
                 if (Niveau < 50)
                 {
-                    Atk += (int)(Atk * 0.045)+1;
-                    Def += (int)(Def * 0.045)+1;
-                    Vit += (int)(Vit * 0.045)+1;
+                    Atk += (int)(Atk * 0.045) + 1;
+                    Def += (int)(Def * 0.045) + 1;
+                    Vit += (int)(Vit * 0.045) + 1;
                     PvMax += (int)(PvMax * 0.04);
                 }
                 else
@@ -349,10 +362,41 @@ namespace IsimonWorld
             }
         }
 
-        private void SeReproduire(Isimon i) { }
+        private void SeReproduire(Isimon i)
+        {
+            if (this.Sexe == 'F')
+            {
+                this.Statut = IsiStatut.GESTATION;
+                i.Statut = IsiStatut.DISPO;
+            }
+            else
+            {
+                i.Statut = IsiStatut.GESTATION;
+                this.Statut = IsiStatut.DISPO;
+            }
+        }
 
         private void CreerGroupe() { }
 
         private void IntegrerGroupe() { }
+
+        private void NaissanceIsimon()
+        {
+            Entite newIsimon;
+
+            //Le place n'importe où (juste pour tester)
+            int row = PseudoAlea.GetInt(0, _plateau.NbRow - 1);
+            int col = PseudoAlea.GetInt(0, _plateau.NbColumn - 1);
+
+            while (!_plateau.Matrice[row, col].IsEmpty())
+            {
+                row = PseudoAlea.GetInt(0, _plateau.NbRow - 1);
+                col = PseudoAlea.GetInt(0, _plateau.NbColumn - 1);
+            }
+            this.Statut = IsiStatut.DISPO;
+            newIsimon = new Isimon(new IsiProfil(this.Nom, this.Nom+".png", this.Type, 100, 1, 2, 3), this._plateau);
+            this._plateau.AddActeur(newIsimon);
+            this._plateau.DeplacerActeur(newIsimon, this._plateau.Matrice[row, col]);
+        }
     }
 }

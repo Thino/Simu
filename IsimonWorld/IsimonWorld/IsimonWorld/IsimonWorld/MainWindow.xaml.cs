@@ -96,6 +96,7 @@ namespace IsimonWorld
             if (_th == null)
             {
                 _th = new Thread(new ThreadStart(Routine));
+                _th.SetApartmentState(ApartmentState.STA);
                 _th.Start();
                 bStart.Content = "Stop";
             }
@@ -137,13 +138,6 @@ namespace IsimonWorld
             if (_selectedOne != null)
                 ((IsimonDetailsViewModel)ucDetails.DataContext).Update(_selectedOne);
 
-        }
-
-
-
-
-
-
-       
+        } 
     }
 }
