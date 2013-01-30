@@ -74,5 +74,5 @@ C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x8
 C:\Users\rouchous\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
 C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
-C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
-C:\Users\Thibaut\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Thibaut\Desktop\DepotGit\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Thibaut\Desktop\DepotGit\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb

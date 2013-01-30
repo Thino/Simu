@@ -16,7 +16,9 @@ namespace IsimonTests
     {
         public ConfigurationTests()
         {
-           //Héhé
+            //
+            // TODO: ajoutez ici la logique du constructeur
+            //
         }
 
         private TestContext testContextInstance;

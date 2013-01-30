@@ -152,7 +152,7 @@ namespace IsimonWorld
 
         public void GererGestation()
         {
-        }
+        }  
 
         public void GererGroupe()
         {
@@ -161,8 +161,8 @@ namespace IsimonWorld
 
         public void GererReproduction()
         {
+            SeReproduire((Isimon)this.Interact);
         }
-
 
         public void GererKO()
         {
@@ -180,11 +180,12 @@ namespace IsimonWorld
                 SeDeplacer();
             else if (dresseurs.Count == 0 && isimons.Count == 1)
                 OnlyOneIsimonAround(isimons.First());
-
+            else if (dresseurs.Count == 0 && isimons.Count > 1)
+                MoreThanOneIsimonAround(isimons);
+            else if (dresseurs.Count == 1 && isimons.Count == 0)
             SeDeplacer(); // Juste pour tester et éviter que les pkemons restent statiques pour le moment
         
         }
-
 
         private void incPV(int nbPV)
         {
@@ -196,21 +197,72 @@ namespace IsimonWorld
 
         }
 
-
         public void OnlyOneIsimonAround(Isimon i)
         {
             if(i.Statut == IsiStatut.DISPO || i.Statut == IsiStatut.GROUPE)
             {
-                if (i._sexe != this._sexe && i.Nom == this.Nom && LancerReproduction(i))
-                    SeReproduire(i);
-            }     
+                if (i.Nom == this.Nom)
+                {
+                    if (i.Statut == IsiStatut.GROUPE && LancerIntegrationGroupe(i.Interact))
+                    {
+                        IntegrerGroupe();
+                        return;
+                    }
+                    if (i.Statut == IsiStatut.DISPO && LancerCreationGroupe(i))
+                    {
+                        CreerGroupe();
+                        return;
+                    }
+                    if (i._sexe != this._sexe && LancerReproduction(i))
+                    {
+                        GererReproduction();
+                        return;
+                    }
+                    if (i._sexe == this._sexe && LancerCombat(i))
+                    {
+                        GererCombatIsimon();
+                        return;
+                    }
+                    SeDeplacer();
+                }
+                else
+                {
+                    if(LancerCombat(i))
+                        GererCombatIsimon();
+                    else
+                        SeDeplacer();
+                }
+            } 
+            else
+                SeDeplacer();
         }
 
+        public void  MoreThanOneIsimonAround(List<Isimon> listIsi)
+        {
+            OnlyOneIsimonAround(getFastestIsimon(listIsi));
+        }
+
+        public Isimon getFastestIsimon(List<Isimon> listIsi)
+        {
+            int maxVit = listIsi.First().Vit;
+            Isimon isiSaved = listIsi.First();
+
+            foreach(Isimon i in listIsi)
+            {
+                if (i.Vit > maxVit)
+                {
+                    maxVit = i.Vit;
+                    isiSaved = i;
+                }
+            }
+
+            return isiSaved;
+        }
 
         private bool LancerReproduction(Isimon i)
         { return true; }
 
-        private bool LancerIntegrationGroupe(Groupe g) { return true; }
+        private bool LancerIntegrationGroupe(EntiteActive g) { return true; }
 
         private bool LancerCreationGroupe(Isimon i) { return true; }
 
@@ -224,7 +276,6 @@ namespace IsimonWorld
         }
 
         private bool LancerCombat(Dresseur d) { return true; }
-
 
         private int CalculerDegats(Isimon frappeur, Isimon frappé)
         {
@@ -275,6 +326,8 @@ namespace IsimonWorld
 
         private void SeReproduire(Isimon i);
 
+        private void CreerGroupe();
 
+        private void IntegrerGroupe();
     }
 }
