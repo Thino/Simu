@@ -26,6 +26,6 @@
             <Button Name="bExit" FontWeight="Bold" MaxHeight="50" Grid.Row="4" Content="Quitter" Margin="10,10,10,10" Click="bExit_Click" />
             <my:IsimonDetailsView x:Name="ucDetails" Grid.Row="1" Grid.RowSpan="3" />
         </Grid>
-        <Slider Value="{Binding Tempo}" Grid.Row="1" Minimum="0" Maximum="1000" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Name="sTempo" Width="380" />
+        <Slider Value="{Binding Tempo}" Grid.Row="1" Minimum="0" Maximum="2000" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Name="sTempo" Width="380" />
     </Grid>
 </Window>

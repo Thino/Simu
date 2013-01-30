@@ -288,7 +288,7 @@ namespace IsimonWorld
         private void Attaquer(Isimon i)
         {
             i.Pv = i.Pv - CalculerDegats(this, i);
-            if (i.Pv < 0)
+            if (i.Pv <= 0)
             {
                 i.Pv = 0;
                 this.Statut = IsiStatut.DISPO;
@@ -302,10 +302,7 @@ namespace IsimonWorld
             //Gestion de l'EXP et des niveaux
             float val = 0;
             float ratio = ConstantesCombats.Instance.GetRatio(Type, adversaire.Type);
-            if (ratio < 1)
-                ratio += 1;
-            else
-                ratio -= 1;
+            ratio = 2 - ratio; ;
             if (Niveau < adversaire.Niveau)
             {
                 val = (adversaire.Niveau - Niveau) * 50;
@@ -321,8 +318,25 @@ namespace IsimonWorld
                 val = 20 * ratio;
             }
             Experience += (int)val;
-            if (Experience > (Niveau + 1) * Niveau * 10)
+            if (Experience > (Niveau + 1) * Niveau * 10 && Niveau < 100)
+            {
                 Niveau++;
+                if (Niveau < 50)
+                {
+                    Atk += (int)(Atk * 0.045)+1;
+                    Def += (int)(Def * 0.045)+1;
+                    Vit += (int)(Vit * 0.045)+1;
+                    PvMax += (int)(PvMax * 0.04);
+                }
+                else
+                {
+                    Atk += (int)(Atk * 0.01);
+                    Def += (int)(Def * 0.01);
+                    Vit += (int)(Vit * 0.01);
+                    PvMax += (int)(PvMax * 0.01);
+
+                }
+            }
         }
 
         private void SeReproduire(Isimon i) { }

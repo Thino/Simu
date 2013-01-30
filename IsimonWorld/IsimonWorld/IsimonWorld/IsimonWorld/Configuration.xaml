@@ -24,11 +24,11 @@
         <Label Content="Arbres :" Grid.Row="3"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right"/>
         <Label Content="Isimons :" Grid.Row="4"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right"/>
         <Label Content="Dresseurs :" Grid.Row="5"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Right" />
-        <TextBox Text="10" Name="tbCasesH" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="1" Width="50" MouseEnter="tbCasesH_MouseEnter" MouseLeave="tb_MouseLeave"/>
-        <TextBox Text="10" Name="tbCasesV" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="2" Width="50" MouseEnter="tbCasesV_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="5" Name="tbCasesH" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="1" Width="50" MouseEnter="tbCasesH_MouseEnter" MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="5" Name="tbCasesV" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="2" Width="50" MouseEnter="tbCasesV_MouseEnter"  MouseLeave="tb_MouseLeave"/>
         <TextBox Text="10" Name="tbArbres" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="3" Width="50" MouseEnter="tbArbres_MouseEnter"  MouseLeave="tb_MouseLeave"/>
         <TextBox Text="8" Name="tbIsimons" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="4" Width="50" MouseEnter="tbIsimons_MouseEnter"  MouseLeave="tb_MouseLeave"/>
-        <TextBox Text="2" Name="tbDresseurs" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="5" Width="50" MouseEnter="tbDresseurs_MouseEnter"  MouseLeave="tb_MouseLeave"/>
+        <TextBox Text="0" Name="tbDresseurs" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Grid.Column="1" Grid.Row="5" Width="50" MouseEnter="tbDresseurs_MouseEnter"  MouseLeave="tb_MouseLeave"/>
         <Label Content="%" Grid.Column="2" Grid.Row="3"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />
         <Label Content="%" Grid.Column="2" Grid.Row="4"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />
         <Label Content="%" Grid.Column="2" Grid.Row="5"  Foreground="DarkBlue" FontSize="15" HorizontalAlignment="Left" />

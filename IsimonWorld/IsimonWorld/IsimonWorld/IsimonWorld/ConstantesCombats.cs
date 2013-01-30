@@ -29,7 +29,7 @@ namespace IsimonWorld
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Plante, IsiType.Feu), 0.30F);
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Plante, IsiType.Plante), 1F);
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Plante, IsiType.Elec), 0.80F);
-            this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Plante, IsiType.Eau), 1.70F);
+            this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Plante, IsiType.Eau), 1.80F);
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Elec, IsiType.Feu), 1.1F);
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Elec, IsiType.Plante), 1.2F);
             this.Add(new KeyValuePair<IsiType, IsiType>(IsiType.Elec, IsiType.Elec), 1.0F);

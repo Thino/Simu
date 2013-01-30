@@ -88,10 +88,10 @@ namespace IsimonWorld
 
         private IsimonsDispos()
         {
-            this.Add(new IsiProfil("Pikachu", "Pikachu.png", IsiType.Elec,35,10,10,10));
-            this.Add(new IsiProfil("Salameche", "Salameche.png", IsiType.Feu,44,14,10,8));
-            this.Add(new IsiProfil("Carapuce", "Carapuce.png", IsiType.Eau,45,12,16,10));
-            this.Add(new IsiProfil("Bulbizarre", "Bulbizarre.png", IsiType.Plante,39,8,15,8));         
+            this.Add(new IsiProfil("Pikachu", "Pikachu.png", IsiType.Elec,38,12,12,12));
+            this.Add(new IsiProfil("Salameche", "Salameche.png", IsiType.Feu,42,14,10,8));
+            this.Add(new IsiProfil("Carapuce", "Carapuce.png", IsiType.Eau,41,11,13,9));
+            this.Add(new IsiProfil("Bulbizarre", "Bulbizarre.png", IsiType.Plante,47,7,14,6));         
 
         }
 

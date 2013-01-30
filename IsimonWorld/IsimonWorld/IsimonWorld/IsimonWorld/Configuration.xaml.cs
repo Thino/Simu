@@ -86,7 +86,7 @@ namespace IsimonWorld
 
         private void tbDresseurs_MouseEnter(object sender, MouseEventArgs e)
         {
-            tblInfos.Text = "Nombre entre 1 et 20 %";
+            tblInfos.Text = "Nombre entre 0 et 20 %";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -124,7 +124,7 @@ namespace IsimonWorld
                     throw new ArgumentException();
                 champ = "Dresseurs";
                 parametres[4] = int.Parse(_dresseurs);
-                if (parametres[4] < 1 || parametres[4] > 20)
+                if (parametres[4] < 0 || parametres[4] > 20)
                     throw new ArgumentException();
                 new MainWindow(parametres).Show();
                 this.Close();

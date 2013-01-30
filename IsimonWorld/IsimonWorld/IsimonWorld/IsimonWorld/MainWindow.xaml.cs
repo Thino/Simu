@@ -122,7 +122,7 @@ namespace IsimonWorld
                         ((EntiteActive)ea).Agir();
                 }
                 App.Current.Dispatcher.Invoke((majPlateau)ActualiserPlateau);
-                Thread.Sleep(1001 - Tempo);
+                Thread.Sleep(2001 - Tempo);
             }
         }
 
