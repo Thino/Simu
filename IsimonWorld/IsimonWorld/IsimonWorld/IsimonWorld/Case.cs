@@ -8,6 +8,8 @@ namespace IsimonWorld
     public class Case
     {
 
+        //Test
+
         private int _row;
 
         public int Row

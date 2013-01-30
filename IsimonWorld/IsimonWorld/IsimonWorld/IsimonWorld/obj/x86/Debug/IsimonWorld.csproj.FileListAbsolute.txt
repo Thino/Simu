@@ -76,3 +76,5 @@ C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\D
 C:\Users\Bryan\Desktop\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
 C:\Users\Thibaut\Desktop\DepotGit\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
 C:\Users\Thibaut\Desktop\DepotGit\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
+C:\Users\Bryan\Desktop\Repo\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.exe
+C:\Users\Bryan\Desktop\Repo\IsimonWorld\IsimonWorld\IsimonWorld\IsimonWorld\obj\x86\Debug\IsimonWorld.pdb
