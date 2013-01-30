@@ -12,6 +12,8 @@ namespace IsimonWorld
 
         private int _row;
 
+        //il va être bien ce test
+
         public int Row
         {
             get { return _row; }
