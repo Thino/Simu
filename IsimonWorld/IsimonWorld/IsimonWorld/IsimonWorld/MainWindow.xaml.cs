@@ -45,8 +45,6 @@ namespace IsimonWorld
             set { _tempo = value; }
         }
 
-
-
         public MainWindow(int[] args)
         {
             InitializeComponent();
@@ -73,10 +71,7 @@ namespace IsimonWorld
             _plateau = new Plateau(init, gPlateau);
             foreach (Entite e in _plateau.GetActeurs())
                 if( e is Isimon )
-                    e.Image.MouseUp += new MouseButtonEventHandler(Isimon_MouseUp);
-            
-                
-            
+                    e.Image.MouseUp += new MouseButtonEventHandler(Isimon_MouseUp);  
         }
 
         void Isimon_MouseUp(object sender, MouseButtonEventArgs e)

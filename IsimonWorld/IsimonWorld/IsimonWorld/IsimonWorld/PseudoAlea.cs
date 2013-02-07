@@ -26,7 +26,7 @@ namespace IsimonWorld
         }
 
 
-        static double boxMuller(double inMoyenne, double inEcartType)
+        public static double boxMuller(double inMoyenne, double inEcartType)
         {
             nb = 0.0;
             old = false;
@@ -59,7 +59,7 @@ namespace IsimonWorld
 
 
 
-        static int tableDeRepartition(int inNombreClasse, int[] inTabEffectif)
+        public static int tableDeRepartition(int inNombreClasse, int[] inTabEffectif)
         {
 
             int i, j, total = inTabEffectif[0];
@@ -86,11 +86,5 @@ namespace IsimonWorld
             }
             return j;
         }
-
-
-
-
-
-
     }
 }

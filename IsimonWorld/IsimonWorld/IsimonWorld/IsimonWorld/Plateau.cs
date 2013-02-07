@@ -16,7 +16,15 @@ namespace IsimonWorld
 
         private List<Entite> _acteurs;
 
+        private List<Groupe> _listGrp;
+
         private Grid _gPlateau;
+
+        public List<Groupe> ListGrp
+        {
+            get { return _listGrp; }
+            set { _listGrp = value; }
+        }
 
         public int NbRow
         {
@@ -45,6 +53,7 @@ namespace IsimonWorld
                 for (int j = 0; j < _nbColumn; j++)
                     _matrice[i, j] = new Case(i, j);
             _acteurs = new List<Entite>();
+            _listGrp = new List<Groupe>();
             _gPlateau = _inGPlateau;
             InitActeurs(parametres);
       

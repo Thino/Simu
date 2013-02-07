@@ -22,8 +22,28 @@ namespace IsimonWorld
         private int _atk;
         private int _def;
         private int _vit;
+        private int _nbJourGestation, _nbJourTotalGestation;
         private IsiStatut _statut;
         private EntiteActive _interact;
+        private int _grpId;
+
+        public int GrpId
+        {
+            get { return _grpId; }
+            set { _grpId = value; }
+        }
+
+        public int NbJourGestation
+        {
+            get { return _nbJourGestation; }
+            set { _nbJourGestation = value; }
+        }
+
+        public int NbJourTotalGestation
+        {
+            get { return _nbJourTotalGestation; }
+            set { _nbJourTotalGestation = value; }
+        }
 
         public EntiteActive Interact
         {
@@ -98,6 +118,7 @@ namespace IsimonWorld
             : base(i.Nom, i.Img, plateau)
         {
             _experience = 0;
+            _grpId = -1;
             _statut = IsiStatut.DISPO;
             _niveau = 1;
             _type = i.Type;
@@ -110,7 +131,6 @@ namespace IsimonWorld
             else
                 _sexe = 'F';
         }
-
 
         public override void Agir()
         {
@@ -140,7 +160,6 @@ namespace IsimonWorld
             }
         }
 
-
         public void GererCombatDresseur()
         {
         }
@@ -152,10 +171,11 @@ namespace IsimonWorld
 
         public void GererGestation()
         {
-            //à améliorer
-            int jour = PseudoAlea.GetInt(0, 20);
-            if (jour == 20)
+            if (NbJourGestation == NbJourTotalGestation)
                 NaissanceIsimon();
+            else
+                NbJourGestation++;
+            Console.WriteLine(NbJourGestation + " : " + NbJourTotalGestation);
         }
 
         public void GererGroupe()
@@ -208,23 +228,23 @@ namespace IsimonWorld
             {
                 if (i.Nom == this.Nom)
                 {
-                    if (i.Statut == IsiStatut.GROUPE && LancerIntegrationGroupe(i.Interact))
+                    if (i.Statut == IsiStatut.GROUPE && LancerIntegrationGroupe())
                     {
-                        IntegrerGroupe();
+                        IntegrerGroupe(i);
                         return;
                     }
-                    /*if (i.Statut == IsiStatut.DISPO && LancerCreationGroupe(i))
+                    if (i.Statut == IsiStatut.DISPO && LancerCreationGroupe(i))
                     {
-                        CreerGroupe();
+                        CreerGroupe(i);
                         return;
-                    }*/
+                    }
                     if (Math.Abs(i.Niveau - this.Niveau) <= 10)
                     {
-                        if (i._sexe != this._sexe && LancerReproduction(i))
+                        /*if (i._sexe != this._sexe && LancerReproduction(i))
                         {
                             GererReproduction();
                             return;
-                        }
+                        }*/
                         if (i._sexe == this._sexe && LancerCombat(i))
                         {
                             GererCombatIsimon();
@@ -265,7 +285,7 @@ namespace IsimonWorld
             {
                 level = Math.Abs(i.Niveau - this.Niveau);
 
-                if (level < minLevel && level <= 10)
+                if (level < minLevel)
                 {
                     minLevel = Math.Abs(i.Niveau - this.Niveau);
                     isiSaved = i;
@@ -285,9 +305,23 @@ namespace IsimonWorld
             return true;
         }
 
-        private bool LancerIntegrationGroupe(EntiteActive g) { return true; }
+        private bool LancerIntegrationGroupe() 
+        {
+            //retourne toujours vrai, ne pas oublier de faire la proba
+            this.Statut = IsiStatut.GROUPE;
+            
+            return true;
+        }
 
-        private bool LancerCreationGroupe(Isimon i) { return true; }
+        private bool LancerCreationGroupe(Isimon i)
+        {
+            //retourne toujours vrai, ne pas oublier de faire la proba
+            this.Statut = IsiStatut.GROUPE;
+            i.Statut = IsiStatut.GROUPE;
+            this._interact = i;
+            i._interact = this;
+            return true;
+        }
 
         private bool LancerCombat(Isimon i)
         {
@@ -368,17 +402,29 @@ namespace IsimonWorld
             {
                 this.Statut = IsiStatut.GESTATION;
                 i.Statut = IsiStatut.DISPO;
+                this.NbJourTotalGestation = (int)PseudoAlea.boxMuller(20, 3);
             }
             else
             {
                 i.Statut = IsiStatut.GESTATION;
                 this.Statut = IsiStatut.DISPO;
+                i.NbJourTotalGestation = (int)PseudoAlea.boxMuller(20, 3);
             }
         }
 
-        private void CreerGroupe() { }
+        private void CreerGroupe(Isimon i)
+        {
+            //Changer nom grpe
+            Groupe grp = new Groupe("nomPourTest", this._plateau, this, this._interact);
+            _plateau.ListGrp.Add(grp);
+            this._grpId =  i._grpId = grp.Id;
+        }
 
-        private void IntegrerGroupe() { }
+        private void IntegrerGroupe(Isimon i) 
+        {
+            this._grpId = i._grpId;
+            _plateau.ListGrp[_grpId].Grp.Add(this);
+        }
 
         private void NaissanceIsimon()
         {
