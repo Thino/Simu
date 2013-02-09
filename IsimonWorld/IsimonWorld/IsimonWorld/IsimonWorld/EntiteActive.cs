@@ -24,6 +24,11 @@ namespace IsimonWorld
             _plateau.DeplacerActeur(this, liste[nb]);
         }
 
+        public void SeDeplacer(int i, int j)
+        {
+            _plateau.DeplacerActeur(this, new Case(i, j));
+        }
+
         public abstract void Agir();
     
     }

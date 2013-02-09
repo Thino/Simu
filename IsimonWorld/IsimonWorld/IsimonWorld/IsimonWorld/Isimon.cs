@@ -181,6 +181,7 @@ namespace IsimonWorld
         public void GererGroupe()
         {
             //Envisager une récupération plus rapide de chaque entité du groupe ( protection de masse)
+            _plateau.ListGrp[_grpId].SeDeplacer();
         }
 
         public void GererReproduction()
@@ -191,8 +192,14 @@ namespace IsimonWorld
         public void GererKO()
         {
             incPV(2);
+
             if (Pv >= PvMax / 2)
-                this.Statut = IsiStatut.DISPO;
+            {
+                if (GrpId == -1)
+                    this.Statut = IsiStatut.DISPO;
+                else
+                    this.Statut = IsiStatut.GROUPE;
+            }
         }
 
         public void GererDispo()
@@ -238,27 +245,27 @@ namespace IsimonWorld
                         CreerGroupe(i);
                         return;
                     }
-                    if (Math.Abs(i.Niveau - this.Niveau) <= 10)
+                   /* if (Math.Abs(i.Niveau - this.Niveau) <= 10)
                     {
-                        /*if (i._sexe != this._sexe && LancerReproduction(i))
+                        if (i._sexe != this._sexe && LancerReproduction(i))
                         {
                             GererReproduction();
                             return;
-                        }*/
-                        if (i._sexe == this._sexe && LancerCombat(i))
+                        }
+                       /* if (i._sexe == this._sexe && LancerCombat(i))
                         {
                             GererCombatIsimon();
                             return;
                         }
-                    }
+                    }*/
                     else
                         SeDeplacer();
                 }
                 else
                 {
-                    if (Math.Abs(i.Niveau - this.Niveau) <= 10 && LancerCombat(i))
+                    /*if (Math.Abs(i.Niveau - this.Niveau) <= 10 && LancerCombat(i))
                         GererCombatIsimon();
-                    else
+                    else*/
                         SeDeplacer();
                 }
             }
@@ -348,8 +355,13 @@ namespace IsimonWorld
             if (i.Pv <= 0)
             {
                 i.Pv = 0;
-                this.Statut = IsiStatut.DISPO;
+                if(this.GrpId == -1)
+                    this.Statut = IsiStatut.DISPO;
+                else
+                    this.Statut = IsiStatut.GROUPE;
+
                 i.Statut = IsiStatut.KO;
+
                 Victoire(i);
             }
         }

@@ -7,12 +7,7 @@ namespace IsimonWorld
 {
     public class Case
     {
-
-     
-
         private int _row;
-
-        
 
         public int Row
         {
